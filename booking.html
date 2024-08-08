@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Makkah and Madinah Tours</title>
+    <link rel="stylesheet" href="css/booking.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Book Your Tour</h2>
+        <form id="bookingForm">
+            <label for="tour">Select Tour</label>
+            <select id="tour" name="tour" required>
+                <option value="umrah-package">Umrah Package</option>
+                <option value="hajj-package">Hajj Package</option>
+                <option value="madinah-visit">Madinah Visit</option>
+            </select>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Select Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="people">Number of People</label>
+            <input type="number" id="people" name="people" min="1" required>
+
+            <label for="requests">Special Requests</label>
+            <textarea id="requests" name="requests" rows="4"></textarea>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>
